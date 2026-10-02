@@ -351,44 +351,43 @@ footer{
     #home h3{
         font-size:1.5em;
     }
+ 
     #about h1{
           font-size:2.5em;
     }
     #services h1{
-          font-size:2.5em;
+          font-size:1.3em;
     }
     #about .skills{
         gap:3em;
     }
     #contact{
-            display: flex;
+         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+    }
+    .links a{
+        font-size:small;
     }
     #contact h1{
           font-size:2.5em;
     }
-    #services .header{
-        font-size: 3em;
-    }
+
     #contact .input-box span{
         font-size:1.2em;
     }
-    .input-box input{
-        padding: 0.5em 0.4em;
-    }
     form{
         width:200px;
-
-    
     }
     form input{
-        padding:1em 1.3em;
+        padding:10px 15px;
+        font-size:small;
     }
+    
     footer{
         flex-direction:column;
         gap:5em;
-        align-items:left;
     }
 }
