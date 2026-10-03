@@ -40,26 +40,32 @@ cards.forEach(card=>{
 //logic for sending the email after hitting submit
 
     
-function submitEmail(){
-   
+function submitEmail(e){
+   const form=document.getElementById('form');
     const name=document.getElementById('name').value;
     const email =document.getElementById('email').value;
     const message =document.getElementById('message').value;
     String(name);
     String(email);
     String(message);
-
+const emailregex= /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const to="dmkkerl@gmail.com";
 const subject=`New message from ${name}`;
 const body=`${message}`;
 console.log(name)
 console.log(subject)
 console.log(email);
+
+
     if((name ==='')||(email==='')||(message==='')){
      
         document.getElementById('form').classList.add('errorborder');
         document.getElementById('errormessage').classList.add('error');
    
+    }
+      else if(!emailregex.test(email.trim())){
+        console.log("this block is running")
+        window.alert("please enter a valid email address")
     }
     else{
         

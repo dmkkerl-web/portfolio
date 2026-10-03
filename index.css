@@ -272,6 +272,7 @@ transition:0.3s ease-in-out;
 #form.errorborder{
     visibility:visible;
     border:1px solid red;
+    border-radius: 10px;
 }
 #contact.errorborder{
     border:1px solid red;
@@ -401,6 +402,12 @@ footer{
     }
 }
 @media(max-width:768px){
+    i{
+        font-size:x-small;
+    }
+    .logo{
+        font-size:1.4em;
+    }
     #home h1{
         font-size:2.5em;
     }
@@ -435,7 +442,7 @@ footer{
         font-size:1.2em;
     }
     form{
-        width:200px;
+        border:none;
     }
     form input{
         padding:10px 15px;
