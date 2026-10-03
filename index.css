@@ -212,25 +212,81 @@ transition:0.3s ease-in-out;
 }
 .card:hover{
     border:3px solid rgb(100,100,100);
+    
 }
 .card p{
     opacity:0.7;
 
+}
+.card button{
+    padding:10px 20px;
+    border-radius:0.5em;
+    background:rgba(245, 245, 245, 0.555);
+    border:none;
+    color:white;
+    visibility:hidden;
+    opacity:0;
+    transform:translateY(10px);
+    transition:0.4s ease-in-out;
+}
+#viewmore.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+
+}
+.card button:hover{
+    
+    background:hsl(0, 0%, 90%);
+    color:black;
 }
 .card img{
     min-width:25px;
     border-radius: 0.5em;
 }
 #contact{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    color:white;
     background-color: var(--second-background);
+    transition:0.3s ease-in-out;
+}
+#errormessage{
+
+    visibility:hidden;
+    transform:translateY(10px);
+    border:1px solid red;
+    padding:20px 10px;
+    border-radius:20px;
+    background:rgba(255, 0, 0, 0.386);
+    transition:0.4s ease;
+}
+#errormessage.error{
+    visibility:visible;
+    transform:translateY(0);
+
+}
+#form.errorborder{
+    visibility:visible;
+    border:1px solid red;
+}
+#contact.errorborder{
+    border:1px solid red;
+    
 }
 form{
+   
+    padding:20px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
     gap:2em;
 }
+
 form .input-box{
     display:flex;
     flex-direction:column;

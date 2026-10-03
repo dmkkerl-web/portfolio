@@ -20,7 +20,7 @@
             <a href="#services">Services</a>
             <a href="#contact">Contacts</a>
         </ul>
-        <a href="#contacts" class="btn">Contact Me</a>
+        <a href="#contact" class="btn">Contact Me</a>
           <i class="bx bx-list-ul" id="menu"></i>
     </nav>
 
@@ -88,9 +88,10 @@
                     and make sure they represent you well.
                 </p>
             <img src="images\walls-io-NQemEoEHEg8-unsplash.jpg">
+            <button id="viewmore">view more</button>
             </div>
 
-              <div class="card">
+              <div class="card" >
                 <h1><span>Web Design</span></h1>
                  <p>I shine in creating anything that lives in the internet,
                     my passion is to create solutions and collaborate with others
@@ -98,6 +99,7 @@
                     ones more efficient.
                 </p>
             <img src="images\daniel-korpai-pKRNxEguRgM-unsplash.jpg">
+            <button id="viewmore">view more</button>
             </div>
 
               <div class="card">
@@ -110,6 +112,7 @@
                     find what they need in the website.
                 </p>
             <img src="images\karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg">
+            <button id="viewmore">view more</button>
             </div>
             
         </div>
@@ -118,28 +121,33 @@
 </section>
 
 <section id="contact">
-    <form>
+    <form id="form">
     <h1 class="header"><span>Contact</span></h1>
      <div class="input-box">
         <span>Your Name</span>
         <input type="text"
+        id="name"
         placeholder="Enter your name here...">
 
     </div>
      <div class="input-box">
         <span>Your Email</span>
         <input type="text"
+        id="email"
         placeholder="Enter your email here...">
 
     </div>
     <div class="input-box">
         <span>Your Message</span>
         <input type="text"
+        id="message"
         placeholder="Enter your message here...">
 
     </div>
-    <div class="btn">Submit</div>
+    <div class="btn" onclick="submitEmail()">Submit</div>
+    <p id="errormessage">Please input in all fields</p>
 </form>
+
 </section>
 <footer>
     <div class="col-left">
